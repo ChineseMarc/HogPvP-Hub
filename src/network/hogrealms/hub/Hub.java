@@ -22,8 +22,7 @@ public class Hub extends JavaPlugin {
     PluginManager pluginManager = Bukkit.getServer().getPluginManager();
     serversHandler = new ServersHandler(this);
     queueManager = new QueueManager(this, serversHandler);
-    new Listener(this, serversHandler, queueManager);
-    pluginManager.registerEvents(listener, this);
+    pluginManager.registerEvents(new Listener(this, serversHandler, queueManager), this);
   }
 
   @Override
