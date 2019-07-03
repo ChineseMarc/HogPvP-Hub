@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="AuthMe">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Libs/AuthMe.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Libs/AuthMe.jar!/" />
+    </SOURCES>
+  </library>
+</component>

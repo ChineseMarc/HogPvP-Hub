@@ -1,0 +1,51 @@
+Spawn:
+  world: world
+  x: 43.31180287713059
+  y: 37.0
+  z: -52.64047542860879
+  yaw: 1.2077212
+  pitch: 8.49173
+GUI:
+  size: 27
+  name: '&aSRV SELECTOR'
+Servers:
+  uhc:
+    ip: '127.0.0.1'
+    port: 25569
+    gui:
+      slot: 0
+      item: 1
+      name: 'UHC'
+      lore:
+        - 'Lore %online_uhc%'
+        - 'Lore %count_uhc%'
+  hcf:
+    ip: '127.0.0.1'
+    port: 25567
+    gui:
+      slot: 1
+      item: 2
+      name: 'HCF'
+      lore:
+        - 'Lore %online_hcf%'
+        - 'Lore %count_hcf%'
+  practice:
+    ip: '127.0.0.1'
+    port: 25566
+    gui:
+      slot: 2
+      item: 3
+      name: 'PREKTIS'
+      lore:
+        - 'Lore %online_practice%'
+        - 'Lore %count_practice%'
+JoinMessage:
+  - '&7&m-----------------------------------------------------&r'
+  - '&3Welcome &f&l%player% &fto the &3&lHogPvP &fNetwork'
+  - '&7&m-----------------------------------------------------&r'
+JoinItems:
+  Selector:
+    Name: '&3&lServer Selector'
+    Lore:
+      - '&b* &fRight-Click to select server.'
+    Slot: 3

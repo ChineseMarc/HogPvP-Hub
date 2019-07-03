@@ -1,0 +1,3 @@
+name: HubCore
+main: network.hogrealms.hub.Hub
+version: 0.0.1
