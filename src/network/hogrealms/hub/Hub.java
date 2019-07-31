@@ -9,13 +9,11 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Hub extends JavaPlugin {
-  private Hub plugin;
   private ServersHandler serversHandler;
   private QueueManager queueManager;
 
   @Override
   public void onEnable() {
-    plugin = this;
     getConfig().options().copyDefaults(true);
     saveConfig();
     worldSettings();
@@ -27,10 +25,8 @@ public class Hub extends JavaPlugin {
 
   @Override
   public void onDisable() {
-    plugin = null;
     serversHandler = null;
     queueManager = null;
-	  
   }
 
   private void worldSettings() {
@@ -45,12 +41,7 @@ public class Hub extends JavaPlugin {
     world.setStorm(false);
     world.setTime(0L);
   }
-
-  /** @return Hub instance */
-  public Hub getPlugin() {
-    return plugin;
-  }
-
+	
   /** @return ServersHandler instance */
   public ServersHandler getServersHandler() {
     return serversHandler;
